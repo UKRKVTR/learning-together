@@ -5,3 +5,17 @@
   max-width: 100%;
   margin-left: 100px;
 }
+.cardMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  height: 400px;
+  max-width: 300px;
+  width: 100%;
+  margin: 20px;
+}

@@ -1,19 +1,28 @@
 import React from 'react'
 import './styles.css'
 import { NavLink } from 'react-router-dom'
-import { FaRegUser } from 'react-icons/fa'
+import { FaRegUser, FaMoon } from 'react-icons/fa'
 import { RxHamburgerMenu } from 'react-icons/rx'
 
 function Navigation () {
+  const toggleWhite = () => {
+    document.querySelectorAll('.buttonMenu').forEach(button => {
+      button.classList.toggle('White')
+    })
+  }
   return (
     <nav>
       <div className='navWrapped'>
         <NavLink to='/signup' className='buttonMenu'>
           <FaRegUser />
         </NavLink>
-        <div className='buttonMenu'>
+        <button className='buttonMenu'>
           <RxHamburgerMenu />
-        </div>
+        </button>
+        <div className='spacer'></div>
+        <button className='buttonMenu' onClick={toggleWhite}>
+          <FaMoon />
+        </button>
       </div>
     </nav>
   )

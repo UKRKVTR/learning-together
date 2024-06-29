@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 import Navigation from '../../components/navigation'
-
+import { NavLink } from 'react-router-dom'
 function Main () {
   return (
     <div className='container'>
@@ -23,15 +23,15 @@ function Main () {
         </header>
         <main>
           <div className='cardMenu'>
-            <div className='card'>
+            <NavLink className='card'>
               <h2>Programming</h2>
-            </div>
-            <div className='card'>
+            </NavLink>
+            <NavLink className='card'>
               <h2>Linguistics</h2>
-            </div>
-            <div className='card'>
+            </NavLink>
+            <NavLink className='card'>
               <h2>Design</h2>
-            </div>
+            </NavLink>
           </div>
           <div className='about'></div>
         </main>
