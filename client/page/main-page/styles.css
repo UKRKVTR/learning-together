@@ -1,0 +1,76 @@
+* {
+  font-family: 'Vinque', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.mainText {
+  color: black;
+  text-align: center;
+}
+.mainText p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.main {
+  max-width: 100%;
+  margin-left: 100px;
+}
+.mainWhite {
+  color: white;
+}
+
+.cardMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card,
+.cardWhite {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border: 1px solid black;
+  box-shadow: 0 0 0 rgb(0, 0, 0);
+  border-radius: 10px;
+  height: 400px;
+  max-width: 15.625vw;
+  width: 100%;
+  margin: 20px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.card h2 {
+  font-size: 2rem;
+  bottom: 0;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 10px 10px black;
+}
+.card:hover {
+  box-shadow: 0 20px 50px rgb(0, 0, 0);
+  transform: scale(110%);
+  transition: 0.5s;
+}
+.cardWhite:hover {
+  box-shadow: 0 20px 50px rgb(204, 204, 204);
+  transform: scale(110%);
+  transition: 0.5s;
+}
+.prog {
+  background-image: url('../../public/generated_image.png');
+  background-position: center;
+  background-size: cover;
+}
+.ling {
+  background-image: url('../../public/generated_image (1).png');
+  background-position: center;
+  background-size: cover;
+}
+.desig {
+  background-image: url('../../public/generated_image (2).png');
+  background-position: center;
+  background-size: cover;
+}
